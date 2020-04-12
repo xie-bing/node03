@@ -1,0 +1,54 @@
+/*基础样式*/
+* {
+    margin: 0;
+    padding: 0;
+    /*清除点击高亮效果 这会在手机上用    透明*/
+    -webkit-tap-highlight-color: transparent;
+    /*避免盒子里面多了边框被挤出去 以border开始计算宽度*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+    /*微软雅黑*/       /*sans-serif这是手机默认的字体样式 就是如果不支持微软雅黑的话执行默认样式*/
+    font-family: 'Microsoft YaHei' sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+/*输入框 文本框默认样式*/
+ input,textarea {
+     border: none;
+     /*可以自行缩放    none 不可以自行伸缩*/
+     resize: none;
+     /*去除高亮*/
+     outline: none;
+     /*清除在移动设备上的立体效果*/
+     -webkit-appearance: none;
+ }
+
+/*清除浮动 前后清除 加，是满足两种之一就可以*/
+.clearfix::after,.clearfix::before {
+    content: ' ';
+    display: block;/*或者inline-block*/
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*雪碧图公共部分*/
+/*
+[class*='icon-']{
+    background: url(../images/sprites.png) no-repeat;
+    background-size: 200px 200px;
+    position: absolute;
+}
+
+*/

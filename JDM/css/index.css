@@ -1,0 +1,239 @@
+
+/*外层盒子*/
+.box{
+    position: relative;
+}
+
+/*顶部搜索框*/
+.header {
+    width: 100%;
+    height: 36px;
+    background: #d13743;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+}
+/*插入雪碧图*/
+.header .headerBox {
+    position: relative;
+    width: 100%;
+}
+.header .headerBox .logo{
+    width: 60px;
+    height: 40px;
+    background-image: url(../images/sprites.png);
+    background-size: 200px 200px;
+    background-position: 0 -109px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+
+.header .headerBox form {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    padding-left: 80px;
+    padding-right: 70px;
+    margin-top: 3px;
+}
+.header .headerBox form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 35px;
+}
+
+.header .headerBox span {
+    position: absolute;
+    top:7px ;
+    right: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+.header .headerBox .search {
+    width: 60px;
+    height: 40px;
+    background-image: url(../images/sprites.png);
+    background-size: 200px 200px;
+    background-position: -60px -109px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:5px;
+    left: 90px;
+}
+
+/*轮播图区域*/
+.loop {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.loop ul{
+    width: 800%;
+}
+.loop ul:first-child li{
+    width: 12.5%;
+    float: left;
+}
+.loop ul:first-child li img{
+    width: 100%;
+    display: block;
+}
+/*小圆点*/
+.loop ul:last-child{
+    width: 130px;
+    height: 60px;
+    position: absolute;
+    bottom:-19%;
+    left: 37%;
+
+}
+.loop ul:last-child li{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+}
+/*导航栏*/
+.nav {
+    width: 100%;
+    height: 170px;
+}
+.nav {
+    width: 100%;
+    padding: 0 3%;
+}
+.nav ul li {
+    width: 25%;
+    float: left;
+    margin:2px 0;
+    text-align: center;
+}
+.nav ul li img {
+    width: 40px;
+    height: 40px;
+    margin:8px 0;
+}
+.nav ul li p{
+    /* text-align: center; */
+    font-size: 14px;
+    color: #666;
+}
+
+
+/*商品秒杀*/
+.product {
+    /* background: #ccc; */
+}
+.product .product_one {
+
+}
+.product_top {
+    width: 100%;
+    height: 40px;
+    /* background: green; */
+    position: relative;
+}
+.product_top .product_a{
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 4px;
+}
+.product_top a img {
+    width: 100%;
+}
+.product_top .product_span{
+    margin-left: 32px;
+    line-height: 35px;
+    color: #d13743;
+}
+.product_top .product_left{
+    float: left;
+
+}
+.product_top .product_right {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.product_top .product_ms{
+    margin-top: 1px;
+    margin-left: 0;
+}
+.product_top .product_left .product_time{
+background: #000;
+color: #ffffff;
+padding: 0 4px;
+}
+
+/*秒杀主体*/
+.main {
+    width: 100%;
+
+}
+.main ul li {
+    width: 33.3%;
+    height: 100px;
+    float: left;
+    text-align: center;
+}
+.main ul li div {
+    width: 100%;
+}
+.main ul li div img {
+    width: 70%;
+}
+.main ul li p:nth-of-type(1){
+    color: #ff0000;
+}
+.main ul li div{
+    border-right: 1px dashed #cccccc;
+}
+
+
+/*超值购*/
+
+.product_two .product_shoppingTop p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+/*伪元素添加前边框*/
+.product_two .product_shoppingTop p::before{
+    content: ' ';
+    border: 2px solid #d8505c;
+    margin-left: 21px;
+    margin-right: 10px;
+}
+.product_two .product_shoppingBottom {
+    border-top: 1px solid #ccc;
+}
+.product_two .product_shoppingBottom div{
+    float: left;
+}
+.product_two .product_shoppingBottom div:nth-of-type(1){
+    width: 49%;
+    border-right: 1px solid #ccc;
+}
+.product_two .product_shoppingBottom div:nth-of-type(1) img{
+    width: 100%;
+}
+.product_two .product_shoppingBottom div:nth-of-type(2){
+    width: 49%;
+    border-bottom: 1px solid #ccc;
+}
+.product_two .product_shoppingBottom div:nth-of-type(2) img{
+    width: 100%;
+}
+.product_two .product_shoppingBottom div:nth-of-type(3){
+    width: 49%;
+}
+.product_two .product_shoppingBottom div:nth-of-type(3) img{
+    width: 100%;
+}
